@@ -1,0 +1,72 @@
+.axis text {
+    font: 15px sans-serif;
+}
+
+.axis line, .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.link {
+    fill: none;
+    /*stroke: lightsteelblue;*/
+    /*stroke-opacity: .5;*/
+    /*stroke-width: 8px;*/
+}
+
+.sent text {
+    fill: white;
+    font: 15px sans-serif;
+    text-anchor: end;
+}
+
+rect.bar-pos {
+    fill: #FF6633;
+}
+
+rect.bar-neg {
+    fill: #0099CC;
+}
+
+.d3-tip {
+    line-height: 1;
+    width: 200px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+.node-text-source {
+    font: bold 24px consolas;
+    fill: #3498DB;
+}
+.node-text-target{
+    font: bold 24px consolas;
+    fill:#CA6F1E;
+}
+.node-text-normal {
+    font: normal 20px consolas;
+    fill:black;
+}

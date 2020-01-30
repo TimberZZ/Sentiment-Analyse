@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Burrow</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/shop-item.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+
+    <script type="text/javascript" src="../static/js/d3.v5.js"></script>
+    <script type="text/javascript" src="../static/js/d3-tip.js"></script>
+    <script type="text/javascript" src="../static/js/d3-slider.js"></script>
+</head>
+
+<body>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h1 class="my-4">Analysis Display</h1>
+            <div class="list-group">
+                <a href="/conn" class="list-group-item">Connection Analysis</a>
+                <a href="/location" class="list-group-item">Location Analysis</a>
+                <a href="/sentiment" class="list-group-item">Sentiment Analysis</a>
+                <a href="#" class="list-group-item active">Cohesiveness Matrix</a>
+            </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+            <div class="card mt-4">
+                <div class="card-body" id="container">
+
+                    <div class="row align-items-center">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm">
+                            <div id="slider-time"></div>
+                        </div>
+                    </div>
+
+                    <svg class="cohesive"></svg>
+                </div>
+
+
+            </div>
+            <!-- /.card -->
+
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+    </div>
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Burrow Analysis 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/js/cohesive.js"></script>
+
+</body>
+
+</html>
